@@ -1,0 +1,24 @@
+{% extends 'main/pattern.html' %}
+{% load static %}
+
+{% block title %}Страница с тестами{% endblock %}
+
+{% block content %}
+
+    <div class="list_name_test">
+
+        <h1>Выберите тест</h1>
+        
+        {% if test %}
+            {% for el in test %}
+                <div class="test_name">
+                    <a class="test_url" href="{% url 'test-name' el.id %}"><h2>{{ el.title }}</h2></a>
+                    
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Нет тестов</p>
+        {% endif %}
+    </div>
+    <a href="{% url 'create_test' %}" class="add_test">Добавить тест</a>
+{% endblock %}

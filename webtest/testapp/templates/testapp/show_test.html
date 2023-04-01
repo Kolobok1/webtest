@@ -1,0 +1,14 @@
+{% extends 'main/pattern.html' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+
+    <div class="list_name_test">
+
+        <h1 class="test_name">{{ article.title }}</h1>
+        <p class="qwee">{{ article.question }}</p><br>
+        <!-- <p class="qwee">{{ article.answer }}</p><br> -->
+        <p class="qwee">{{ article.option }}</p>
+    </div>
+{% endblock %}

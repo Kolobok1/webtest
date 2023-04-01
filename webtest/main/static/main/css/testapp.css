@@ -1,0 +1,107 @@
+/* .form_add {
+    
+} */
+
+.list_name_test {color: rgb(149, 64, 8);}
+
+.list_name_test {
+    float: left;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.add_test {
+    float: right;
+    margin-right: 4%;
+    margin-top: 2%;
+    text-decoration: none;
+    color: rgb(3, 141, 156);
+    display: block;
+    position: relative;
+}
+    
+
+.test_name {
+    margin-top: 5%;
+    color: rgb(1, 51, 127);
+}
+
+
+.input_form {
+    float: left;
+    margin-left: 10px;
+}
+
+.answer {
+    float: left;
+    margin-top: 5px;
+}
+
+.li_answer {
+    margin-top: 5px;
+    
+}
+
+.test_url {
+    text-decoration: none;
+    color: rgb(1, 51, 127);
+}
+
+.button_form {
+    margin-left: 10px;
+    margin-top: 10%;
+}
+
+.button_form_add_test {
+    margin-top: -9%;
+    float: right;
+    margin-right: 2%;
+}
+
+.form {
+    position: absolute;
+    top: 0%;
+    right: 20%;
+    bottom: 10%;
+    left: 20%;
+    margin: auto;
+}
+
+.form_title {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.form_question {
+    margin-left: 2%;
+    margin-top: 30px;
+    background-color: rgb(181, 181, 228);
+}
+.form_answer {
+    margin-top: 5px;
+}
+/* .form_option {
+    margin-top: 5px;
+} */
+
+.qwee {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.right_panel {
+    position: absolute;
+    background: rgb(203, 190, 235);
+    height: 100vh;
+    color: rgb(56, 31, 36);
+    border-left: 4px solid rgb(31, 30, 38); 
+    top: 10%;
+    right: 0%;
+    bottom: 10%;
+    left: 80%;
+    margin: auto;
+
+}
+
+.qesion_form {
+    float: left;
+    margin-left: 15%;
+}

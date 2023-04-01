@@ -1,0 +1,58 @@
+{% extends 'main/pattern.html' %}
+
+
+{% block title %}Страница добавления тестов{% endblock %}
+
+{% block content %}
+
+    <div class="form_add">
+        <h1 class="qesion_form">Форма по добавлению теста</h1>
+        <form method="post" class="form" id="form_id">
+            {% csrf_token %}
+            <div class="form_title">{{form.title }}</div><br>
+            <aside >
+                <div class="button_form_add_test"><br>
+                    <button class="btn btn-success" type="submit">Добавить тест</button>
+                </div><br>
+            </aside>
+
+            <div class="form_question" id="1">{{ form.question }}
+                <div class="form_answer">{{ form.answer }}</div><br>
+                <div class="form_option">{{ form.option }}</div><br>
+            </div>
+            <span>{{ error }}</span>
+
+
+                
+            
+        </form>
+
+        
+        <aside class="right_panel">
+            <div class="button_form"><br>
+                <button class="btn btn-primary" onclick="addQuestion()">Добавить вопрос</button>
+                <button class="btn btn-primary" onclick="">Удалить вопрос</button>
+            </div>
+            <div class="button_form"><br>
+                <button class="btn btn-primary" onclick="addOption()">Добавить вариант</button>
+                <button class="btn btn-primary" onclick="">Удалить вариант</button>
+            </div>
+        </aside>
+
+        <script>
+            question_id = 1;
+            function addQuestion() {
+                question_id += 1;
+                document.getElementById('form_id').innerHTML += `<div class="form_question" id=` + question_id + `>{{ form.question }}
+                    <div class="form_answer">{{ form.answer }}</div><br>
+                    <div class="form_option">{{ form.option }}</div><br>
+                </div>`
+            };
+            function addOption() {
+                document.getElementById(question_id).innerHTML += `<div class="form_option">{{ form.option }}</div><br>`}
+        </script>
+    </div>
+
+
+{% endblock %}
+
